@@ -1,0 +1,27 @@
+{
+  "name": "tumblr-design",
+  "version": "1.0.0",
+  "description": "HTML and CSS practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp start"
+  },
+  "author": "Daniel Castillo",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "postcss-reporter": "^5.0.0",
+    "postcss-scss": "^2.0.0",
+    "stylelint": "^9.4.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

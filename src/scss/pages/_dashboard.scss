@@ -1,0 +1,174 @@
+$font-stack: helvetica, sans-serif;
+$primary-color: #333;
+
+/* General styles */
+body {
+  background-color: #d2dae6;
+}
+
+/* Header */
+
+nav .navbar {
+  padding: 50px !important;
+}
+
+.navbar-brand {
+  padding-right: 57px;
+}
+
+.custom-navbar {
+  background-color: #36465d !important;
+  padding: 16px 0px;
+  margin-bottom: 36px;
+}
+
+.navbar__search-bar input {
+  background-color: #2d3a4e;
+  min-height: 32px;
+  border: none;
+  text-indent: 32px;
+  padding: 5px;
+  color: #fff;
+}
+
+.icon-on {
+  color: #fff;
+}
+
+.icon-off {
+  color: #a0a0a0;
+}
+
+.icon-box {
+  padding: 0px 3px;
+  background-color: #529ecc;
+  border-radius: 5px;
+}
+
+.navbar--line {
+  border: .5px solid #3e82e7;
+  padding: 0px 3px;
+}
+
+.nav-icon {
+  margin-right: 30px;
+}
+
+/* Main styles */
+
+.post-container__new__post {
+  background-color: #fff;
+  padding: 31px 49px;
+}
+
+.post-container__new__post ul {
+  margin: 0;
+}
+
+.post-container__article-footer p {
+  margin-right: 7px;
+}
+
+.post-container__article-header, .post-container__article-footer {
+  padding: 30px;
+}
+
+.hashtag {
+  font-weight: bold;
+}
+
+.post-container__posts article {
+  margin-bottom: 32px;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+}
+
+/* Aside styles */
+
+.aside-blogs__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 27px;
+  font-weight: bold;
+}
+
+.blog__card {
+  padding: 0px 27px;
+}
+
+.blog__card__tumblr__name {
+  font-size: 12px;
+}
+
+.blog__card__username {
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+/* New post modal styles */
+
+.post-modal__content {
+  border: none;
+  border-radius: 0;
+}
+
+.post-modal__content-header, .post-modal__content-footer {
+  padding: 32px;
+  background-color: #fff;
+}
+
+.post-modal__content-body {
+  background-color: #f3f3f3;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+
+.post-modal__content-footer {
+  padding: 33px 33px;
+}
+
+.post-modal__content-footer--btn-post {
+  background-color: #529ecc;
+  min-height: 3vh;
+  border-radius: .3rem;
+  padding: 12px 19px;
+  border-style: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  li.nav-item {
+    padding-left: 1em;
+  }
+  .icon-box {
+    border-radius: 2em;
+  }
+  .nav-icon {
+    margin-right: 0px;
+  }
+  .navbar-brand {
+    padding-right: 3px;
+  }
+
+  /* Main styles */
+
+  .post-container {
+    margin-bottom: 15px;
+  }
+  .post-container__new__post {
+    padding: 7px 7px;
+  }
+  .post-container__avatar {
+    padding-left: 0px;
+  }
+  .post-container__avatar {
+    margin-bottom: 7px;
+  }
+  .post-container__new__post-type {
+    padding-right: 7px;
+  }
+}

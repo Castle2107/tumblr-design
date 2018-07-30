@@ -1,0 +1,143 @@
+.sprite {
+  display: inline-block;
+  background: url("../assets/img/sprite-icons.png") no-repeat;
+  overflow: hidden;
+}
+
+.sprite__photo {
+  background-position: -2px -0px;
+  width: 31px;
+  height: 25px;
+}
+
+.sprite__video {
+  background-position: -2px -27px;
+  width: 31px;
+  height: 22px;
+}
+
+.sprite__audio {
+  background-position: -2px -51px;
+  width: 28px;
+  height: 29px;
+}
+
+.sprite__chat {
+  background-position: -2px -82px;
+  width: 27px;
+  height: 27px;
+}
+
+.sprite__link {
+  background-position: -2px -111px;
+  width: 27px;
+  height: 27px;
+}
+
+.sprite__quote {
+  background-position: -2px -140px;
+  width: 26px;
+  height: 23px;
+}
+
+.sprite__text {
+  background-position: -2px -165px;
+  width: 26px;
+  height: 16px;
+}
+
+.sprite__chatoff {
+  background-position: -2px -183px;
+  width: 22px;
+  height: 20px;
+}
+
+.sprite__houseon {
+  background-position: -2px -205px;
+  width: 20px;
+  height: 21px;
+}
+
+.sprite__loc {
+  background-position: -2px -228px;
+  width: 20px;
+  height: 20px;
+}
+
+.sprite__locoff {
+  background-position: -2px -250px;
+  width: 20px;
+  height: 20px;
+}
+
+.sprite__sidearrow {
+  background-position: -2px -272px;
+  width: 20px;
+  height: 14px;
+}
+
+.sprite__mailoff {
+  background-position: -2px -288px;
+  width: 19px;
+  height: 14px;
+}
+
+.sprite__tumblricon {
+  background-position: -2px -304px;
+  width: 19px;
+  height: 31px;
+}
+
+.sprite__greychat {
+  background-position: -2px -337px;
+  width: 18px;
+  height: 16px;
+}
+
+.sprite__plusbox {
+  background-position: -2px -355px;
+  width: 18px;
+  height: 18px;
+}
+
+.sprite__pen {
+  background-position: -2px -375px;
+  width: 17px;
+  height: 17px;
+}
+
+.sprite__turn {
+  background-position: -2px -394px;
+  width: 17px;
+  height: 16px;
+}
+
+.sprite__heart {
+  background-position: -2px -412px;
+  width: 15px;
+  height: 14px;
+}
+
+.sprite__personoff {
+  background-position: -2px -428px;
+  width: 15px;
+  height: 18px;
+}
+
+.sprite__searchicon {
+  background-position: -2px -448px;
+  width: 15px;
+  height: 15px;
+}
+
+.sprite__xclose {
+  background-position: -2px -465px;
+  width: 14px;
+  height: 14px;
+}
+
+.sprite__boltoff {
+  background-position: -19px -412px;
+  width: 12px;
+  height: 20px;
+}

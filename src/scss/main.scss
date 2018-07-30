@@ -1,0 +1,22 @@
+// Loads bootstrap custom
+
+@import "vendor/_bootstrap-custom.scss";
+
+// Loads fontawesome
+
+@import "fontawesome.scss";
+
+// Loads fontawesome styles for different types of icons
+
+@import "solid.scss";
+@import "regular.scss";
+@import "brands.scss";
+
+// Project sprites
+
+@import "helpers/sprites.scss";
+
+// Project pages
+
+@import "pages/dashboard.scss";
+@import "pages/login.scss";

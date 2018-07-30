@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tumblr</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container">
+        <div class="mr-auto d-flex">
+          <a class="navbar-brand pl-2" href="#">
+            <i class="fab fa-tumblr fa-2x text-white"></i>
+          </a>
+          <form class="form-inline navbar__search-bar">
+            <input type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <hr class="d-block d-sm-none bg-white my-1" /> <!-- Only shows on mobiles -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item nav-icon active ml-xs-5">
+              <a class="nav-link" href="#">
+                <i class="fas fa-home icon-on"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Home</p>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#">
+                <i class="far fa-compass icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Explore</p>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#">
+                <i class="far fa-envelope icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Inbox</p>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#">
+                <i class="far fa-comment icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Messages</p>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#">
+                  <i class="fas fa-bolt icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Activity</p>
+              </a>
+            </li>
+            <li class="nav-item nav-icon">
+              <a class="nav-link" href="#">
+                  <i class="fas fa-user icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">Account</p>
+              </a>
+            </li>
+            <li class="nav-item nav-icon icon-box mr-0">
+              <a class="nav-link" href="#">
+                  <i class="fas fa-pencil-alt icon-off"></i>
+                <p class="d-inline d-lg-none ml-3 text-white">New Post</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <section class="post-container col-lg-7 offset-lg-1 mb-sm-5">
+          <div class="row mb-5">
+            <div class="post-container__avatar col-lg-2 col-sm-12 mb-sm-5">
+              <img src="./assets/img/pPhotoRetroGirl.png" alt="retro girl">
+            </div>
+            <div class="post-container__new__post col-lg-10 col-sm-12">
+              <nav>
+                <ul class="list-unstyled d-flex flex-row flex-wrap justify-content-between align-items-center text-center">
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__text"></i>
+                    </a>
+                    <p class="m-0 pt-3">Text</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#" data-toggle="modal" data-target="#newPostModal">
+                      <i class="sprite sprite__photo"></i>
+                    </a>
+                    <p class="m-0 pt-3">Photo</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__quote"></i>
+                    </a>
+                    <p class="m-0 pt-3">Quote</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__link"></i>
+                    </a>
+                    <p class="m-0 pt-3">Link</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__chat"></i>
+                    </a>
+                    <p class="m-0 pt-3">Chat</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__audio"></i>
+                    </a>
+                    <p class="m-0 pt-3">Audio</p>
+                  </li>
+                  <li class="flex-column post-container__new__post-type">
+                    <a href="#">
+                      <i class="sprite sprite__video"></i>
+                    </a>
+                    <p class="m-0 pt-3">Video</p>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <section class="post-container__posts">
+            <article class="row">
+              <div class="post-container__avatar col-lg-2 col-sm-12 mb-sm-5">
+                <img src="./assets/img/pPhotoGuy.png" alt="retro girl">
+              </div>
+              <div class="post-container__article col-lg-10 col-sm-12">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="card card-body post-container__article-header">
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p class="mb-0">Here's a blog: strauss</p>
+                          <a class="ml-4" href="#">
+                            <strong>Follow</strong>
+                          </a>
+                        </div>
+                        <div class="d-flex ml-auto">
+                          <div class="col">
+                            <i class="fas fa-times icon-off"></i>
+                          </div>
+                          <div class="col pr-0">
+                            <i class="fas fa-compass icon-off"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <img src="./assets/img/mainPhoto.png" width="100%">
+                  </div>
+                  <div class="row">
+                    <div class="card card-body blog_post_footer">
+                      <div class="d-flex flex-row flex-wrap px-0 post-container__article-footer">
+                        <p class="hashtag">#forest</p>
+                        <p class="hashtag">#nature</p>
+                        <p class="hashtag">#darkness</p>
+                        <p class="hashtag">#blackforest</p>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p>234,450 notes</p>
+                        </div>
+                        <ul class="d-flex ml-auto justify-content-between list-unstyled post-container__article-footer-actions">
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-paper-plane icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-comment icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="fas fa-retweet icon-off"></i>
+                          </li>
+                          <li class="col p-0">
+                            <i class="far fa-heart icon-off"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="row">
+              <div class="post-container__avatar col-lg-2 col-sm-12 mb-sm-5">
+                <img src="./assets/img/pPhotoRetroGirl.png" alt="retro girl">
+              </div>
+              <div class="post-container__article col-lg-10 col-sm-12">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="card card-body post-container__article-header">
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p class="mb-0">Here's a blog: strauss</p>
+                          <a class="ml-4" href="#">
+                            <strong>Follow</strong>
+                          </a>
+                        </div>
+                        <div class="d-flex ml-auto">
+                          <div class="col">
+                            <i class="fas fa-times icon-off"></i>
+                          </div>
+                          <div class="col pr-0">
+                            <i class="fas fa-compass icon-off"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <img src="./assets/img/mainPhoto.png" width="100%">
+                  </div>
+                  <div class="row">
+                    <div class="card card-body blog_post_footer">
+                      <div class="d-flex flex-row flex-wrap px-0 post-container__article-footer">
+                        <p class="hashtag">#forest</p>
+                        <p class="hashtag">#nature</p>
+                        <p class="hashtag">#darkness</p>
+                        <p class="hashtag">#blackforest</p>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p>234,450 notes</p>
+                        </div>
+                        <ul class="d-flex ml-auto justify-content-between list-unstyled post-container__article-footer-actions">
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-paper-plane icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-comment icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="fas fa-retweet icon-off"></i>
+                          </li>
+                          <li class="col p-0">
+                            <i class="far fa-heart icon-off"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="row">
+              <div class="post-container__avatar col-lg-2 col-sm-12 mb-sm-5">
+                <img src="./assets/img/pPhotoGuy.png" alt="retro girl">
+              </div>
+              <div class="post-container__article col-lg-10 col-sm-12">
+                <div class="container px-0">
+                  <div class="row">
+                    <div class="card card-body post-container__article-header">
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p class="mb-0">Here's a blog: strauss</p>
+                          <a class="ml-4" href="#">
+                            <strong>Follow</strong>
+                          </a>
+                        </div>
+                        <div class="d-flex ml-auto">
+                          <div class="col">
+                            <i class="fas fa-times icon-off"></i>
+                          </div>
+                          <div class="col pr-0">
+                            <i class="fas fa-compass icon-off"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <img src="./assets/img/mainPhoto.png" width="100%">
+                  </div>
+                  <div class="row">
+                    <div class="card card-body blog_post_footer">
+                      <div class="d-flex flex-row flex-wrap px-0 post-container__article-footer">
+                        <p class="hashtag">#forest</p>
+                        <p class="hashtag">#nature</p>
+                        <p class="hashtag">#darkness</p>
+                        <p class="hashtag">#blackforest</p>
+                      </div>
+                      <div class="d-flex flex-row">
+                        <div class="d-flex">
+                          <p>234,450 notes</p>
+                        </div>
+                        <ul class="d-flex ml-auto justify-content-between list-unstyled post-container__article-footer-actions">
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-paper-plane icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="far fa-comment icon-off"></i>
+                          </li>
+                          <li class="col mr-4 p-0">
+                            <i class="fas fa-retweet icon-off"></i>
+                          </li>
+                          <li class="col p-0">
+                            <i class="far fa-heart icon-off"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+        </section>
+
+        <aside class="aside-blogs col-lg-3 offset-lg-1 col-sm-12">
+          <section class="row recommended-blogs mb-5">
+            <div class="card card-body p-0">
+              <div class="d-flex flex-row recommended-blogs__header">
+                <h5 class="aside-blogs__title">recommended blogs</h5>
+              </div>
+              <div class="blog__card">
+                <div class="d-flex flex-row">
+                  <div class="p-0 col">
+                    <img class="flex-column" src="./assets/img/pPhotoR1.png" alt="user-photo">
+                  </div>
+                  <div class="flex-grow-1 ml-1">
+                    <p class="blog__card__username">username</p>
+                    <p class="blog__card__tumblr__name">Tumblr blog name</p>
+                  </div>
+                  <div class="col text-right pr-0 mr-0">
+                    <i class="far fa-plus-square icon-off"></i>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="blog__card">
+                <div class="d-flex flex-row">
+                  <div class="p-0 col">
+                    <img class="flex-column" src="./assets/img/pPhotoR2.png" alt="user-photo">
+                  </div>
+                  <div class="flex-grow-1 ml-1">
+                    <p class="blog__card__username">username</p>
+                    <p class="blog__card__tumblr__name">Tumblr blog name</p>
+                  </div>
+                  <div class="col text-right pr-0 mr-0">
+                    <i class="far fa-plus-square icon-off"></i>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="blog__card">
+                <div class="d-flex flex-row">
+                  <div class="p-0 col">
+                    <img class="flex-column" src="./assets/img/pPhotoR3.png" alt="user-photo">
+                  </div>
+                  <div class="flex-grow-1 ml-1">
+                    <p class="blog__card__username">username</p>
+                    <p class="blog__card__tumblr__name">Tumblr blog name</p>
+                  </div>
+                  <div class="col text-right pr-0 mr-0">
+                    <i class="far fa-plus-square icon-off"></i>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="blog__card">
+                <div class="d-flex flex-row">
+                  <div class="p-0 col">
+                    <img class="flex-column" src="./assets/img/pPhotoR4.png" alt="user-photo">
+                  </div>
+                  <div class="flex-grow-1 ml-1">
+                    <p class="blog__card__username">username</p>
+                    <p class="blog__card__tumblr__name">Tumblr blog name</p>
+                  </div>
+                  <div class="col text-right pr-0 mr-0">
+                    <i class="far fa-plus-square icon-off"></i>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="recommended-blogs__footer">
+                <h5 class="aside-blogs__title">explore tumblr</h5>
+              </div>
+            </div>
+          </section>
+          <section class="row radar-blogs">
+            <div class="card card-body p-0">
+              <div class="radar-blogs__header">
+                <h5 class="aside-blogs__title">radar</h5>
+              </div>
+              <div class="blog__card">
+                <div class="d-flex flex-row">
+                  <div class="p-0 col">
+                    <img class="flex-column" src="./assets/img/pPhotoRadarGirl.png" alt="user-photo">
+                  </div>
+                  <div class="flex-grow-1 ml-1">
+                    <p class="blog__card__username">username</p>
+                    <p class="blog__card__tumblr__name">Tumblr blog name</p>
+                  </div>
+                  <div class="col text-right pr-0 mr-0">
+                    <i class="far fa-plus-square icon-off"></i>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <img src="./assets/img/radarPhoto.png" alt="" width="100%">
+                </div>
+                <div class="d-flex flex-row flex-wrap mt-3">
+                  <div class="d-flex">
+                    <p>1,320 notes</p>
+                  </div>
+                  <div class="d-flex ml-auto">
+                    <div class="col mr-4 p-0">
+                      <i class="fas fa-retweet icon-off"></i>
+                    </div>
+                    <div class="col p-0">
+                      <i class="far fa-heart icon-off"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+  
+  <!-- Modal -->
+  <div class="modal fade post-modal" id="newPostModal" tabindex="-1" role="dialog" aria-labelledby="newPostModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content post-modal__content">
+        <div class="post-modal__content-header d-flex flex-row align-items-center">
+          <div class="left-controls flex-column">
+            <div class="d-flex flex-row align-items-center">
+              <a class="text-dark" href="#" role="button" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+                mikemike
+                <i class="fas fa-angle-down pl-2 text-dark"></i>
+              </a>
+            </div>
+          </div>
+          <div class="right-controls ml-auto flex-column">
+            <a href="#">
+              <i class="fas fa-cog icon-off"></i>
+            </a>
+          </div>
+        </div>
+        <div class="modal-body post-modal__content-body">
+          <ul class="list-unstyled post-modal__content-body--post-type d-flex flex-row justify-content-around text-center">
+            <li class="col-4">
+              <a href="#">
+                <i class="fas fa-camera-retro fa-3x icon-off"></i>
+                <p class="pt-4 text-secondary">Upload photos</p>
+              </a>
+            </li>
+            <li class="col-4">
+              <a href="#">
+                <i class="fas fa-globe fa-3x icon-off"></i>
+                <p class="pt-4 text-secondary">Upload photos</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer post-modal__content-footer d-flex">
+          <div class="mr-auto">
+            <button type="button" class="btn btn-link text-dark" data-dismiss="modal">Close</button>
+          </div>
+          <div class="ml-auto">
+            <button type="button" class="btn btn-link text-dark">
+              <i class="fab fa-twitter"></i>
+            </button>
+            <button type="button" class="post-modal__content-footer--btn-post">
+              Post
+              <i class="fas fa-angle-down pl-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="./js/jquery.min.js"></script>
+
+  <!-- popper js -->
+  <script src="./js/popper.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script src="./js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    });
+  </script>
+
+</body>
+
+</html>
