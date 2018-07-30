@@ -1,4 +1,3 @@
-/* Gulpfile.js */
 let gulp = require('gulp');
 let gutil =  require('gulp-util');
 let sass = require('gulp-sass');
@@ -23,7 +22,7 @@ gulp.task('styles', () => {
       path.join(__dirname, 'node_modules/bootstrap/scss/'),
       path.join(__dirname, 'node_modules/@fortawesome/fontawesome-free/scss/'),
       path.join(__dirname, 'src/scss')],
-      // outputStyle: 'compressed'
+      outputStyle: 'compressed'
     }))
     .pipe(gulp.dest('dist/css/'))
 });
@@ -52,7 +51,6 @@ gulp.task('server', () => {
     .pipe(webserver({
       livereload: true,
       open: true,
-      host: '192.168.1.107'
     }))
 });
 
@@ -206,12 +204,22 @@ gulp.task('js', () => {
 /**
  * Runs all the tasks
  */
-gulp.task('start', [
-  // 'scss-lint',
+gulp.task('dev', [
+  'scss-lint',
   'html',
   'fonts',
   'js',
   'styles',
   'server',
   'watch'
+], cb => cb);
+
+/**
+ * Build for production
+ */
+gulp.task('build', [
+  'html',
+  'fonts',
+  'js',
+  'styles',
 ], cb => cb);
