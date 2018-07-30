@@ -23,12 +23,21 @@ nav .navbar {
 }
 
 .navbar__search-bar input {
+  background-image: url(../assets/img/searchIcon.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
   background-color: #2d3a4e;
   min-height: 32px;
   border: none;
   text-indent: 32px;
   padding: 5px;
   color: #fff;
+  width: 350px;
+}
+
+.navbar__search-bar input:focus {
+  background-color: #fff;
+  color: #000;
 }
 
 .icon-on {
@@ -141,6 +150,9 @@ nav .navbar {
 }
 
 @media screen and (max-width: 576px) {
+  .navbar__search-bar input {
+    width: 100%;
+  }
   li.nav-item {
     padding-left: 1em;
   }
